@@ -1,7 +1,7 @@
 baseURL = "https://leonardo2718.github.io/"
 languageCode = "en-us"
 title = "Leonardo2718's Personal Website"
-theme = ""
+theme = "pickles"
 PygmentsCodeFences = true
 #pygmentsUseClasses=true
 pygmentsStyle="igor"
