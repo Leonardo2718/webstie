@@ -1,0 +1,44 @@
+baseURL = "https://leonardo2718.github.io/"
+languageCode = "en-us"
+title = "Leonardo2718's Personal Website"
+theme = ""
+PygmentsCodeFences = true
+#pygmentsUseClasses=true
+pygmentsStyle="igor"
+copyright = "Copyright &copy; 2020, Leonardo Banderali<br /><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/80x15.png' /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.<br /> Thoughts, views, and opinions on this site are my own.<br />Powered by <a href='https://gohugo.io/'>Hugo</a>. Theme based on <a href='https://themes.gohugo.io/hugo_theme_pickles/'>pickles</a> by <a href='https://github.com/mismith0227'>mismith0227</a>."
+
+[params]
+    github = "Leonardo2718"
+    linkedin = "Leonardo2718"
+    author = "Leonardo Banderali"
+    bio = "Human, Software Engineer, Artist | Welcome to my personal website!"
+    paginate = 2
+    custom_css = [""]
+
+[params.settings]
+    dateFormat = "2006-01-02"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Software"
+    url = "/posts/software"
+    weight = 2
+
+[[menu.main]]
+    name = "Food"
+    url = "/posts/food"
+    weight = 3
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[[menu.main]]
+    name = "About Me"
+    url = "/about"
+    weight = 5
