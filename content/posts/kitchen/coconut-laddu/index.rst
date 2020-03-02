@@ -20,7 +20,7 @@ easy, quick, delicious, and can serve as a base for many variations of the recip
 Traditionally, coconut laddus are made with milk, sugar, and coconut. However, using
 sweetened condensed milk significantly reduces prep time and the laddus are just as delicious.
 
-Here we go!
+Here's the recipe:
 
 -----------
 Ingredients
