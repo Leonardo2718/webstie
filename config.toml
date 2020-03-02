@@ -29,8 +29,8 @@ copyright = "Copyright &copy; 2020, Leonardo Banderali<br /><a rel='license' hre
     weight = 2
 
 [[menu.main]]
-    name = "Food"
-    url = "/posts/food"
+    name = "Kitchen"
+    url = "/posts/kitchen"
     weight = 3
 
 [[menu.main]]
