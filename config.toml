@@ -23,10 +23,10 @@ copyright = "Copyright &copy; 2020, Leonardo Banderali<br /><a rel='license' hre
     url = "/"
     weight = 1
 
-[[menu.main]]
-    name = "Software"
-    url = "/posts/software"
-    weight = 2
+#[[menu.main]]
+#    name = "Software"
+#    url = "/posts/software"
+#    weight = 2
 
 [[menu.main]]
     name = "Kitchen"
