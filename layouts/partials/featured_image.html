@@ -1,5 +1,0 @@
-{{ if .Params.featuredImg }}
-    {{ $image := .Params.featuredImg }}
-    {{ $res := .Resources.GetMatch $image.src }}
-    <img src="{{ $res.Permalink }}" alt="Featured Image" class="p-article__thumbnail">
-{{ end }}

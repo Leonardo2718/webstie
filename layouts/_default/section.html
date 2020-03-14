@@ -1,8 +1,0 @@
- {{ partial "header.html" . }}
-<h2 class="c-title p-sec-title">{{ .Title }}</h2>
-{{ range $index, $page := .Paginator.Pages }}
-{{ .Render "li" }}
-{{ end }}
-{{ partial "pagination.html" .Paginator }}
-{{ partial "siteinfo.html" . }}
-{{ partial "footer.html" . }}
