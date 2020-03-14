@@ -14,3 +14,7 @@ nav .icon:hover svg{
 .nav-left, .nav-right {
     flex-basis: auto;
 }
+
+.nav-item:hover a, a.nav-item:hover {
+    text-decoration: underline;
+}
