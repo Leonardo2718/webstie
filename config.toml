@@ -17,11 +17,12 @@ Paginate = 2
 [params.social]
     github = "Leonardo2718"
     linkedin = "Leonardo2718"
+    keybase = "leonardo2718"
 #    author = "Leonardo Banderali"
 #    bio = "Human, Software Engineer, Artist | Welcome to my personal website!"
 
 [params.social.config]
-    platforms = ["github","linkedin"]
+    platforms = ["github","linkedin","keybase"]
 
 [params.settings]
     dateFormat = "2006-01-02"
