@@ -11,6 +11,9 @@ copyright = "Copyright &copy; 2020, Leonardo Banderali<br /><a rel='license' hre
 
 Paginate = 2
 
+[params.assets]
+    customCSS = ["css/main.css"]
+
 [params.social]
     github = "Leonardo2718"
     linkedin = "Leonardo2718"
@@ -22,6 +25,12 @@ Paginate = 2
 
 [params.settings]
     dateFormat = "2006-01-02"
+
+[params.sections_left]
+    "/"              = "Home"
+    "/posts/kitchen" = "Kitchen"
+    "/tags"          = "Tags"
+    "/about"         = "About Me"
 
 [[menu.main]]
     name = "Home"
