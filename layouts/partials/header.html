@@ -16,8 +16,11 @@
 {{ end }}
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}"/>
 {{- range .Site.Params.Assets.customCSS -}}
-<link rel='stylesheet' href='{{ . | absURL }}'>
+<link rel='stylesheet' href='{{ . | relURL }}' />
 {{- end -}}
+{{ $scss_options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS $scss_options }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="theme-color" content="#ffffff">
 </head>

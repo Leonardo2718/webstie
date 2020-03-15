@@ -1,0 +1,20 @@
+footer {
+    font-size: 80%;
+}
+
+nav .icon svg {
+    fill: #69707a;
+    background: transparent;
+}
+nav .icon:hover svg{
+    fill: #222324; /* black */
+    /*background: black;*/
+}
+
+.nav-left, .nav-right {
+    flex-basis: auto;
+}
+
+.nav-item:hover a, a.nav-item:hover {
+    text-decoration: underline;
+}
