@@ -1,13 +1,12 @@
 baseURL = "https://leonardo2718.github.io/"
 languageCode = "en-us"
-title = "Leonardo2718's Personal Website"
+title = "Leonardo2718's Website"
 theme = "kiss"
 
 PygmentsCodeFences = true
 #pygmentsUseClasses=true
 pygmentsStyle="igor"
 copyright = "Copyright &copy; 2020, Leonardo Banderali<br /><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/80x15.png' /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.<br /> Thoughts, views, and opinions on this site are my own.<br />Powered by <a href='https://gohugo.io/'>Hugo</a>. Theme based on <a href='https://themes.gohugo.io/kiss/'>kiss</a> by <a href='https://github.com/ribice'>ribice</a>."
-
 
 Paginate = 2
 
