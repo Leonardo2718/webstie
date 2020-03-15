@@ -1,1 +1,1 @@
-<a href="{{ .CurrentSection.File.Dir | relURL }}" class="subtitle is-6">/{{ .CurrentSection.Title }}</a>
+<a href="{{ with .CurrentSection.File }}{{ .Dir | relURL }}{{ end }}" class="subtitle is-6">/{{ .CurrentSection.Title }}</a>
