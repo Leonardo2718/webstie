@@ -3,14 +3,12 @@
 <section class="section">
   <div class="container">
     <div class="subtitle tags is-6 is-pulled-right">
-      {{ partial "section" . }}
       {{ if .Params.tags }}
       {{ partial "tags" .Params.tags }}
       {{ end }}
     </div>
     {{ partial "date" . }}
     <h1 class="title">{{ .Title }}</h1>
-    {{ partial "featured_image.html" . }}
     {{ if and (.Site.Params.Info.adsense) (.Params.adsenseTop) }}
     {{ partial "adsense" . }}
     {{ end }}

@@ -1,0 +1,1 @@
+{{if not .Date.IsZero }}<h2 class="subtitle is-6">{{ .Date.Format (.Site.Params.settings.dateFormat | default "2006-01-02") }}</h2>{{ end }}
