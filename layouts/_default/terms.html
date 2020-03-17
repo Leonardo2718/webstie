@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="content">
+      <ul class="termlist">
+        {{- $name := .Data.Plural -}}
+        {{- range $key, $value := .Data.Terms -}}
+          <li class="term"><a href='{{ (printf "/%v/%v" $name $key) | relURL}}'>{{ $key }}</a></li>
+        {{- end -}}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ partial "footer" . }}
