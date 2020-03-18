@@ -10,3 +10,7 @@ nav .icon:hover svg{
     fill: #222324; /* black */
     /*background: black;*/
 }
+
+.nav-left, .nav-right {
+    flex-basis: auto;
+}
