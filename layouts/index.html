@@ -2,32 +2,11 @@
 {{ partial "nav" . }}
 <section class="section">
   <div class="container">
-    {{- $pctx := . -}}
-    {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-    {{- $pages := $pctx.RegularPages -}}
-    {{ $paginator := .Paginate (where (where $pages "Section" "eq" "posts") "Params.hidden" "ne" true) }}
-    {{ range sort .Paginator.Pages }}
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        {{ partial "section" . }}
-        {{ if .Params.tags }}
-        {{ partial "tags" .Params.tags }}
-        {{ end }}
-      </div>
-      {{ partial "date" .}}
-      <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}{{ partial "taxonomies_count" . }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
-      {{ partial "featured_image.html" . }}
-      <div class="content">
-        {{ .Summary | plainify | safeHTML }}
-        {{ if .Truncated }}
-        <a class="button is-link" href="{{ .Permalink }}" style="height:28px">
-          Read more
-        </a>
-        {{ end }}
-      </div>
-    </article>
+    {{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+    {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
     {{ end }}
   </div>
 </section>
-{{ partial "pager" . }}
+{{ partial "pager" $paginator }}
 {{ partial "footer" . }}
