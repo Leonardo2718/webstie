@@ -3,7 +3,7 @@
 # quit deployment right away if something fails
 set -e
 
-DEPLOY_DIR=public/
+DEPLOY_DIR=public
 OK="[\033[0;32mOK\033[0m]\n"
 
 if [ $# -ne 1 ]; then
@@ -14,9 +14,7 @@ fi
 echo "=== Deploying website to GitHub ==="
 
 echo "[Clearing publish dir]"
-cd $DEPLOY_DIR
-git reset --hard
-cd ..
+rm -rf $DEPLOY_DIR/*
 printf $OK
 
 echo "[Rebuilding website]"
